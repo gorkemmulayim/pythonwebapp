@@ -1,2 +1,2 @@
 test:
-    python test_algorithm.py
+	python test_algorithm.py
