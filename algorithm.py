@@ -1,4 +1,4 @@
-def isDistinct(array: list, startIndex: int, endIndex: int) -> bool:
+def isDistinct(array, startIndex, endIndex):
     """ 
         This method searches the given array from startIndex to endIndex
         for same elements. If all the elements are distinct in the given range,
