@@ -1,6 +1,26 @@
-def containsSameElement(array, startIndex, endIndex):
-    if len(array) == 0 or len(array) == 1:
+def isDistinct(array: list, startIndex: int, endIndex: int) -> bool:
+    """ 
+        This method searches the given array from startIndex to endIndex
+        for same elements. If all the elements are distinct in the given range,
+        returns True, else returns False.
+
+    Args:
+        array (list): Array to be iterater.
+        startIndex (int): Start index, can be negative for backwards search.
+        endIndex (int): End index, can be negative for backwards search.
+
+    Returns:
+        bool: The return value. True if all the elements are distinct, False otherwise.
+
+    Raises:
+        IndexError: If startIndex and endIndex are out of range. Method will return
+            successfully if finds an answer before access the array with wrong index.
+
+    """
+    if len(array) == 0:
         return False
+    if len(array) == 1:
+        return True
     if abs(startIndex) > len(array) or abs(endIndex) > len(array):
         raise IndexError
     else:
@@ -9,7 +29,7 @@ def containsSameElement(array, startIndex, endIndex):
         if endIndex < 0:
             endIndex += len(array)
     if startIndex == endIndex:
-        return False
+        return True
     elif startIndex < endIndex:
         step = 1;
     else:
@@ -17,5 +37,5 @@ def containsSameElement(array, startIndex, endIndex):
     for i in range(startIndex, endIndex, step):
         for j in range(startIndex, endIndex, step):
             if array[i] == array[j] and i != j:
-                return True
-    return False
+                return False
+    return True
