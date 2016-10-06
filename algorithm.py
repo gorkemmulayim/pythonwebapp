@@ -21,8 +21,6 @@ def isDistinct(array, index1, index2):
     endIndex = int(index2)
     if not isinstance(array, list):
         return False
-    if len(array) == 0:
-        return False
     if abs(startIndex) > len(array) or abs(endIndex) > len(array):
         raise IndexError
     if startIndex < 0:
