@@ -10,11 +10,6 @@ app = Flask(__name__)
 import logging
 logging.basicConfig(filename='example.log',level=logging.DEBUG)
 
-@app.route('/')
-def hello_world():
-    return 'Hello, World!'
-
-
 @app.route('/compute', methods=['GET', 'POST'])
 def compute():
     if request.method == 'GET':

@@ -35,8 +35,8 @@ def isDistinct(array, index1, index2):
         step = 1;
     else:
         step = -1;
-    for i in range(startIndex, endIndex, step):
-        for j in range(startIndex, endIndex, step):
+    for i in range(startIndex, endIndex + 1, step):
+        for j in range(startIndex, endIndex + 1, step):
             if array[i] == array[j] and i != j:
                 return False
     return True
