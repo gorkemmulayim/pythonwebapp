@@ -33,6 +33,7 @@ class TestContainsSameElement(unittest.TestCase):
 
     def test_whenIndexIsOutRange(self):
         self.assertRaises(IndexError, isDistinct, self.multipleElementArrayDistinct, 100, 101)
+
 if __name__ == '__main__':
     unittest.main()
 

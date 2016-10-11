@@ -1,6 +1,6 @@
 def isDistinct(array, index1, index2):
     """ 
-        This method searches the given array from startIndex to endIndex
+        This method searches the given array from index1 to index2
         for same elements. If all the elements are distinct in the given range,
         returns True, else returns False.
 
@@ -11,10 +11,12 @@ def isDistinct(array, index1, index2):
 
     Returns:
         bool: The return value. True if all the elements are distinct, False otherwise.
+            Returns False if array contains no element.
 
     Raises:
-        IndexError: If startIndex and endIndex are out of range. Method will return
-            successfully if finds an answer before access the array with wrong index.
+        IndexError: If index1 and index2 are out of range. Method will return
+            False if it encounters same elements before accessing the array
+            with wrong index. Else raises IndexError.
 
     """
     startIndex = int(index1)
