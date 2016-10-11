@@ -4,4 +4,11 @@
 [![Issue Count](https://codeclimate.com/github/RootG/pythonwebapp/badges/issue_count.svg)](https://codeclimate.com/github/RootG/pythonwebapp)
 
 # pythonwebapp
-This is the project where I learn all the components of a realistic working environment for a software engineer.
+
+* Click here to use the [Web Demo](https://lit-cliffs-61973.herokuapp.com/compute)
+
+---
+
+This repository contains a simple algorithm that searches the given array
+for the same elements. If all the elements are distinct in the given range,
+returns **True**, else returns **False**.

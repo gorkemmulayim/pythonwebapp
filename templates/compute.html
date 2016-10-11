@@ -7,12 +7,20 @@
   <body>
     <h1>Hello, World!</h1>
     <br>
-    This method searches the given array from index1 to index2<br>
+    This method searches the given array from start index to end index<br>
     for same elements. If all the elements are distinct in the given range,<br>
-    returns True, else returns False.
-    <br><br><br>
-    Result is {{result}}
-    <br>
+    returns True, else returns False.<br>
+    <br><br>
+    <b>*</b> An array of elements using YAML format in the first form.<br>
+    <b>*</b> The second form accepts a single integer value which denotes the start index.<br>
+    <b>*</b> The third form accepts a single integer value which denotes the end index.<br>
+    <br><br>
+    An example input for the first form is:<br>
+    - 0<br>
+    - 3<br>
+    - -1<br>
+    - -2<br>
+    <br><br>
     <form action="compute" method="post">
       <textarea name="input1" rows="10" cols="30"></textarea>
       <textarea name="input2" rows="10" cols="30"></textarea>
@@ -20,5 +28,7 @@
       <br>
       <input type="submit">
     </form>
+    <br>
+    Result is {{result}}
   </body>
 </html>
