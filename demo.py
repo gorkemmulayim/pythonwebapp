@@ -13,7 +13,7 @@ logging.basicConfig(filename='example.log',level=logging.DEBUG)
 @app.route('/compute', methods=['GET', 'POST'])
 def compute():
     if request.method == 'GET':
-            return render_template('compute.html')
+        return render_template('compute.html')
     else:
         input1 = request.form['input1']
         app.logger.debug(input1)
